@@ -1,0 +1,17 @@
+let num1 = 6;
+let num2 = 8;
+
+let result = num1 > num2;
+
+if(result) {
+    console.log("num1 is greater");
+}
+else if (num2 > num1) {
+    console.log("num2 is greater");
+    console.log("extra output for num2 being greater");
+}
+else {
+    console.log("num 1 and 2 are equal");
+}
+
+console.log("end");
