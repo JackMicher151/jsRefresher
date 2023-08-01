@@ -1,0 +1,8 @@
+let num = 7;
+let result;
+
+// if the true condition is met it will output "Even", while the false condition will output "Odd"
+// used to make true or false checks on one line
+result = num % 2 === 0 ? "Even" : "Odd";
+
+console.log(result);
