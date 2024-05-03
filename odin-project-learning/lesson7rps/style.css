@@ -11,4 +11,22 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+#oppdisplay {
+    flex: 1 0 25vh;
+}
+
+#playtray {
+    flex: 1 0 10vh;
+}
+
+#playerdisplay {
+    flex: 1 0 25vh;
+}
+
