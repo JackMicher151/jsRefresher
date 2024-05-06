@@ -3,7 +3,7 @@
 }
 
 html, body {
-    height:100%;
+    height: 100dvh;
 }
 
 #mainwrapper {
@@ -18,30 +18,43 @@ html, body {
     justify-content: center;
 }
 
-#oppdisplay {
+#oppdisplay, #playerdisplay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     flex: 1 0 400px;
     width: 400px;
+}
+
+#oppdisplay {
     border: solid 5px maroon;
+}
+
+#playerdisplay {
+    border: solid 5px green;
+}
+
+#oppchoice, #playchoice {
+    width: 250px;
+    height: 250px;
+    font-size: 10em;
+    text-align: center;
 }
 
 #playtray {
     flex: 1 0 10vh;
+    width: 350px;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-#playerdisplay {
-    flex: 1 0 400px;
-    width: 400px;
-    border: solid 5px green;
+    justify-content: space-evenly;
 }
 
 #gobutton {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1 0 60px;
+    flex: 0 0 60px;
     height: 25px;
     text-align: center;
     background-color: orange;
@@ -51,7 +64,7 @@ html, body {
 
 #gobutton:active {
     animation-name: pressed;
-    animation-duration: 1s;
+    animation-duration: 150ms;
     animation-timing-function: linear;
 }
 
@@ -60,7 +73,7 @@ html, body {
         background-color: red;
     }
     66% {
-        background-color: blue;
+        background-color: purple;
     }
     100% {
         background-color: orange;
