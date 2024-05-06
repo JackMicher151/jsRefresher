@@ -19,14 +19,50 @@ html, body {
 }
 
 #oppdisplay {
-    flex: 1 0 25vh;
+    flex: 1 0 400px;
+    width: 400px;
+    border: solid 5px maroon;
 }
 
 #playtray {
     flex: 1 0 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #playerdisplay {
-    flex: 1 0 25vh;
+    flex: 1 0 400px;
+    width: 400px;
+    border: solid 5px green;
 }
 
+#gobutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 60px;
+    height: 25px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 4px;
+    border: solid 2px navy;
+}
+
+#gobutton:active {
+    animation-name: pressed;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes pressed {
+    33% {
+        background-color: red;
+    }
+    66% {
+        background-color: blue;
+    }
+    100% {
+        background-color: orange;
+    }
+}
